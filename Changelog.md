@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 
+
+## [1.0.3] - 2020-05-04
+### Added
+- `/assets` directory with `/assets/img` and `/assets/svg` 
+
 ## [1.0.2] - 2020-05-04
 ### Added
 - `Readme` file
