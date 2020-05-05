@@ -55,5 +55,4 @@ yarn.lock
 # App archives
 *.map
 *.log
-dist/
 .tool-versions
