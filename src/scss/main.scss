@@ -73,9 +73,22 @@ form textarea {
         width: 100%;
         z-index: 1000;
 
+        &.mobile{
+            @media(min-width: 1024px){
+                display: none;
+            }
+        }
+        &.desktop{
+            @media(max-width: 1023px){
+                display: none;
+            }
+        }
+
         &-wrapper{
             display: flex;
             justify-content: space-between;
+            max-width: 1110px;
+            margin: 0 auto;
         }
 
         &-container{
@@ -84,7 +97,7 @@ form textarea {
             align-items: center;
             padding-top: 15px;
             padding-bottom: 15px;
-            max-width: 1110px;
+
             &--logo{
                 width: 110px;
                 cursor: pointer;
@@ -107,6 +120,7 @@ form textarea {
                 color: #333 !important;
                 display: block;
                 cursor:pointer;
+                transition: .2s ease-in-out;
 
                 &:hover{
                     color:#0083c9 !important;
@@ -117,7 +131,7 @@ form textarea {
                 display: inline-block;
                 border: 2px solid #0083c9;
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: normal;
                 text-align: center;
                 white-space: nowrap;
                 transition: .3s ease-in-out;
