@@ -71,7 +71,7 @@ form textarea {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 10;
 
         &.mobile{
             @media(min-width: 1024px){
@@ -89,6 +89,18 @@ form textarea {
             justify-content: space-between;
             max-width: 1110px;
             margin: 0 auto;
+            @media(max-width: 1023px){
+                justify-content: center;
+            }
+        }
+
+        &-mobile-wrapper{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            position: absolute;
         }
 
         &-container{
@@ -97,6 +109,17 @@ form textarea {
             align-items: center;
             padding-top: 15px;
             padding-bottom: 15px;
+
+            &:first-child{
+                @media(max-width: 1023px){
+                    margin-left: 15px;
+                }
+            }
+            &:last-child{
+                @media(max-width: 1023px){
+                    margin: 0 auto;
+                }
+            }
 
             &--logo{
                 width: 110px;
@@ -122,6 +145,11 @@ form textarea {
                 cursor:pointer;
                 transition: .2s ease-in-out;
 
+                @media(max-width: 1023px){
+                    padding: 10px 0;
+                    margin: 0;
+                }
+
                 &:hover{
                     color:#0083c9 !important;
                 }
@@ -145,6 +173,36 @@ form textarea {
                     color: white!important;
                 }
             }
+
+            &--menu-button{
+                width: 40px;
+                background: none;
+                border: none;
+
+                svg{
+                    fill: #0083c9;
+                }
+            }
         }
     }
+
+    &__mobile-menu{
+        position: absolute;
+        top: 0;
+        width: 80%;
+        z-index: 11;
+        height: 100%;
+        background-color: white;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        &-container{
+            display: flex;
+            justify-content: left;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            flex-direction: column;
+        }
+    }
+    
 }
