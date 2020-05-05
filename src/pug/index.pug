@@ -2,9 +2,24 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="icon", type="image/png", href="./assets/img/people.png")
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh", crossorigin="anonymous")/
+        link(rel='stylesheet', href=`../../dist/css/main.min.css`, media='all')
+        link(rel="icon", type="image/png", href="./assets/img/people.png")=
         title Atena Project
     body.atena
+        .atena__header
+            .atena__header-wrapper.container
+                .atena__header-container
+                    a.atena__header-container--logo
+                        include ../../assets/svg/logo.svg
+                    a.atena__header-container--item Lorem Ipsum
+                    a.atena__header-container--item Lorem Ipsum
+                    a.atena__header-container--item Lorem Ipsum
+                    a.atena__header-container--item Lorem Ipsum
+                    a.atena__header-container--item Lorem Ipsum
+                    a.atena__header-container--item Lorem Ipsum
+                .atena__header-container
+                    a.atena__header-container--button.btn.btn-medium.link-outlined  Lorem Ipsum
         .atena__footer
             .atena__footer-wrapper
                 .atena__footer-container
@@ -35,3 +50,9 @@ html(lang="en")
                             |Lorem IpsumLorem Ipsum
                             br
                             |Lorem IpsumLorem Ipsum
+
+        footer
+            script(type='text/javascript', src=`../../dist/js/main.min.js`)
+            script(type='text/javascript', src=`https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js`)
+            script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
+            script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js", integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm", crossorigin="anonymous")
