@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 
+## [1.1.2] - 2020-05-05
+### Added
+- Header Desk/Mobile
+- Menu Mobile
+- Footer Desk
+
 ## [1.1.1] - 2020-05-04
 ### Added
 - Founders img
