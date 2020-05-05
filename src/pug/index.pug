@@ -8,7 +8,7 @@ html(lang="en")
         title Atena - Notas
     body.atena
         .atena__header.desktop
-            .atena__header-wrapper.container
+            .atena__header-wrapper
                 .atena__header-container
                     a.atena__header-container--logo
                         include ../../assets/svg/logo.svg
@@ -21,7 +21,10 @@ html(lang="en")
                 .atena__header-container
                     a.atena__header-container--button.btn.btn-medium.link-outlined  Lorem Ipsum
         .atena__header.mobile
-            .atena__header-wrapper.container
+            .atena__header-wrapper
+                .atena__header-container
+                    button.atena__header-container--menu-button
+                        include ../../assets/svg/button.svg
                 .atena__header-container
                     a.atena__header-container--logo
                         include ../../assets/svg/logo.svg
@@ -33,6 +36,18 @@ html(lang="en")
                     a.atena__header-container--item Lorem Ipsum
                 .atena__header-container
                     a.atena__header-container--button.btn.btn-medium.link-outlined  Lorem Ipsum
+        .atena__mobile-menu
+            .atena__mobile-menu-container
+                a.atena__header-container--item Lorem Ipsum
+                a.atena__header-container--item Lorem Ipsum
+                a.atena__header-container--item Lorem Ipsum
+                a.atena__header-container--item Lorem Ipsum
+                a.atena__header-container--item Lorem Ipsum
+                a.atena__header-container--item Lorem Ipsum
+            .atena__mobile-menu-container
+                a.atena__header-container--button.btn.btn-medium.link-outlined  Lorem Ipsum
+
+
         footer
             .atena__footer
                 .atena__footer-wrapper
