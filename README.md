@@ -26,9 +26,10 @@ You should have basic web technologies knowledge (HTML, JS and CSS), some backen
 Run the following comands inside your terminal, on the root directory:
 
 `npm install` :heavy_check_mark:
+
 `npm start` :heavy_check_mark:
 
-You should see your web browser opening in a new window called in the URL `localhost:8080` with the running application
+Open the root file `index.html` inside your browser and the application should be running.
 
   
 ## Contributing
