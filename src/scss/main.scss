@@ -81,36 +81,11 @@ form textarea {
 //////////////////////////////////////////////////////////////////////////////////
 
 .atena{
-    &__overlay{
-        opacity: 0;
-        visibility: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: hsla(0,0%,61%,.8);
-        z-index: 15;
-        transition: all .3s;
-        cursor: pointer;
-
-        &.is--active{
-            opacity: 1;
-            visibility: visible;
-        }
-    }
     &__header{
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 10;
-        transition: background-color .2s ease-out;
-
-        &.has--scrolled{
-            background-color: #fff;
-            border-bottom: 1px solid #0083c9;
-            transition: .2s ease;
-        }
 
         &.mobile{
             @media(min-width: 1024px){
@@ -219,73 +194,22 @@ form textarea {
                 border: none;
 
                 svg{
-                    width: 40px;
-                    height: 40px;
+                    fill: #0083c9;
                 }
             }
         }
     }
 
-    &__close-menu{
-        width: 16%;
-        display: flex;
-        height: 64PX;
-        align-items: center;
-        justify-content: center;
-        font-size: 56px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background: #fff;
-        z-index: 20;
-        transition-timing-function: ease-in;
-        transition: .2s;
-        pointer-events: none;
-        transform: translateX(-100%);
-        visibility: hidden;
-        opacity: 0;
-
-        &.is--active{
-            pointer-events: all;
-            transform: translateX(0);
-            visibility: visible;
-            opacity: 1;
-            transition: transform .3s ease-in;
-        }
-
-        svg{
-            width: 25px;
-        }
-    }
-
     &__mobile-menu{
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
+        display: none;
+        position: absolute;
         top: 0;
-        left: 0;
-        width: 84%;
-        z-index: 19;
+        width: 80%;
+        z-index: 11;
         height: 100%;
         background-color: white;
         padding: 0 15px;
         box-sizing: border-box;
-        box-shadow: 2px 2px 4px 0 rgba(0,0,0,.05);
-        transition-timing-function: ease-in;
-        transition: .2s;
-        pointer-events: none;
-        transform: translateX(-100%);
-
-        border-right: 1px solid #e8e8e8;
-        
-
-        &.is--active{
-            pointer-events: all;
-            transform: translateX(0);
-            visibility: visible;
-            opacity: 1;
-            transition: transform .3s ease-in;
-        }
 
         &-container{
             display: flex;
@@ -293,12 +217,6 @@ form textarea {
             padding-top: 15px;
             padding-bottom: 15px;
             flex-direction: column;
-
-            &:last-child{
-                max-width: 200px;
-                width: 100%;
-                margin: 0 auto;
-            }
         }
     }
     &__footer{
