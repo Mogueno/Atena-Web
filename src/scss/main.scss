@@ -108,7 +108,8 @@ form textarea {
 
         &.has--scrolled{
             background-color: #fff;
-            transition: background-color .2s ease-out;
+            border-bottom: 1px solid #0083c9;
+            transition: .2s ease;
         }
 
         &.mobile{
