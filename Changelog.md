@@ -7,7 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [Unreleased]
-- Added middle section
+
+
+## [1.2.1] - 2020-05-05
+### Added
+- Mobile footer and middle
+- Header mobile
 
 ## [1.1.2] - 2020-05-05
 ### Added
