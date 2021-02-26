@@ -12,4 +12,3 @@ workflows:
   my-workflow:
     jobs:
       - build:
-          context: sonarcloud
